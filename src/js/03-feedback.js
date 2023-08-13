@@ -17,7 +17,7 @@ function handlerInput(evt) {
 function handlerSubmit(evt) {
     evt.preventDefault();
     if (email.value === "" || message.value === "") {
-        return; 
+        return alert("Заповніть усі поля, будь-ласка!");
     } 
     console.log(JSON.parse(localStorage.getItem(KEY) ?? {}));
     form.reset();   
